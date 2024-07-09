@@ -1,2 +1,3 @@
-# tech_notes
-notes for technique topics
+# pynote
+  
+- fn+f1 for remote ssh on vscode
