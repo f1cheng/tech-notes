@@ -7,6 +7,12 @@ chmod 755 /usr/local/bin/docker-compose
 docker-compose --version
 yum update
 --yum install docker-compose-plugin
+yum install podman-remote
+ystemctl enable --now podman.socket
+yum install podman-docker
+podman-remote info
+ls -al /var/run/docker.sock
+[root@VM-16-14-centos single-dev-env]# docker compose -f ./compose-dev.yaml  up
 
 ```
 
