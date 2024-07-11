@@ -37,6 +37,8 @@ Hello world
 [root@VM-16-14-centos simple-dockerfile]#
 
 
+docker rmi -f c60272265270
+
 ```  
 
 ```
