@@ -58,34 +58,6 @@ ls -al /var/run/docker.sock
 or
 docker build .
 
-//docer source
-vi /etc/containers/registries.conf
-unqualified-search-registries = ["docker.io"]
-
-[[registry]]
-prefix = "docker.io"
-location = "registry.docker-cn.com"
-insecure = true
-
-or====================
-
-unqualified-search-registries = ["docker.io"]
-
-[[registry]]
-prefix = "docker.io"
-location = "hub-mirror.c.163.com"
-insecure = true
-
-[[registry.mirror]]
-location = "docker.mirrors.ustc.edu.cn"
-insecure = true
-[[registry.mirror]]
-location = "hub-mirror.c.163.com"
-insecure = true
-[[registry.mirror]]
-location = "registry.docker-cn.com"
-insecure = true
-
 ```
 
 ```
