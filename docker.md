@@ -1,5 +1,6 @@
 
-``` docker sources update.
+docker sources update
+``` 
 ==https://mirror.ccs.tencentyun.com
 vi //etc/containers/registries.conf
 
