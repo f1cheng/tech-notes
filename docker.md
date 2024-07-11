@@ -1,5 +1,20 @@
 
 ```
+==https://mirror.ccs.tencentyun.com
+vi //etc/containers/registries.conf
+
+#unqualified-search-registries = ["registry.access.redhat.com", "registry.redhat.io", "docker.io"]
+unqualified-search-registries = ['docker.io']
+
+[[registry]]
+prefix = "docker.io"
+# This will set the docker registry mirror of a chinese university.
+# DON'T use it unless you have a network connection issue and you trust the mirror provider.
+location = "mirror.ccs.tencentyun.com"
+
+```
+
+```
 centos stream release9:
 yum install docker
 curl -L https://github.com/docker/compose/releases/download/v2.7.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
