@@ -1,5 +1,55 @@
 
 docker sources update
+```
+== https://cloud.tencent.com/document/product/213/46000#MkO4rHTk034QfW_4ahhw9
+dnf config-manager --add-repo=https://mirrors.cloud.tencent.com/docker-ce/linux/centos/docker-ce.repo
+dnf list docker-ce 
+dnf install docker-ce docker-ce-cli containerd.io
+
+ systemctl status docker
+systemctl start docker
+
+
+==https://cloud.tencent.com/document/product/1207/45596#.E4.BD.BF.E7.94.A8.E8.85.BE.E8.AE.AF.E4.BA.91-docker-.E9.95.9C.E5.83.8F.E6.BA.90.E5.8A.A0.E9.80.9F.E9.95.9C.E5.83.8F.E4.B8.8B.E8.BD.BD
+vim /etc/docker/daemon.json
+{
+   "registry-mirrors": [
+   "https://mirror.ccs.tencentyun.com"
+  ]
+}
+ systemctl restart docker
+git clone https://github.com/ianmiell/simple-dockerfile
+cd simple-dockerfile
+docker build .
+
+
+[root@VM-16-14-centos simple-dockerfile]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+<none>       <none>    6d2b37ca80ef   50 seconds ago   197MB
+
+[root@VM-16-14-centos simple-dockerfile]# docker run -it 6d2b
+Hello world
+[root@VM-16-14-centos simple-dockerfile]#
+
+
+[root@VM-16-14-centos simple-dockerfile]# cat Dockerfile
+#FROM - Image to start building on.
+FROM ubuntu:14.04
+
+#MAINTAINER - Identifies the maintainer of the dockerfile.
+MAINTAINER ian.miell@gmail.com
+
+#RUN - Runs a command in the container
+RUN echo "Hello world" > /tmp/hello_world.txt
+
+#CMD - Identifies the command that should be used by default when running the image as a container.
+CMD ["cat", "/tmp/hello_world.txt"]
+[root@VM-16-14-centos simple-dockerfile]#
+
+
+```
+
+docker sources update with podman associated.
 ``` 
 ==https://mirror.ccs.tencentyun.com
 vi //etc/containers/registries.conf
@@ -49,9 +99,6 @@ docker.io/library/python  3.7-alpine  1bac8ae77e4a  11 months ago  49.5 MB
 [root@VM-16-14-centos simple-dockerfile]# docker rmi -f 17cee
 
 
-```  
-
-```
 centos stream release9:
 yum install docker
 curl -L https://github.com/docker/compose/releases/download/v2.7.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
@@ -72,6 +119,7 @@ docker build .
 
 ```
 
+dockerfile sample:
 ```
 
 FROM centos:centos9
