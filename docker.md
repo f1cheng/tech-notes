@@ -13,6 +13,29 @@ prefix = "docker.io"
 location = "mirror.ccs.tencentyun.com"
 
 ```
+```
+[root@VM-16-14-centos simple-dockerfile]# docker run -it $(docker build -q .)
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+Hello world
+[root@VM-16-14-centos simple-dockerfile]# echo $(docker build -q .)
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+17cee55c5757ec78edcfc0371c023ea56f193ff4af7542063b8d9608ee6b1e3e
+[root@VM-16-14-centos simple-dockerfile]# docker images
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+REPOSITORY                TAG         IMAGE ID      CREATED        SIZE
+<none>                    <none>      c60272265270  4 hours ago    49.5 MB
+<none>                    <none>      17cee55c5757  4 hours ago    206 MB
+quay.io/podman/hello      latest      5dd467fce50b  6 weeks ago    787 kB
+docker.io/library/python  3.7-alpine  1bac8ae77e4a  11 months ago  49.5 MB
+docker.io/library/ubuntu  14.04       13b66b487594  3 years ago    206 MB
+[root@VM-16-14-centos simple-dockerfile]# docker run -it 17cee55c5757
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+Hello world
+[root@VM-16-14-centos simple-dockerfile]#
+
+
+```  
 
 ```
 centos stream release9:
