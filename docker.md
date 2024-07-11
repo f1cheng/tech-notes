@@ -1,4 +1,9 @@
 
+```
+centos
+yum install docker
+
+```
 
 ```
 
