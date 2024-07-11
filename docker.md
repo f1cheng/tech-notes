@@ -37,7 +37,17 @@ Hello world
 [root@VM-16-14-centos simple-dockerfile]#
 
 
-docker rmi -f c60272265270
+
+[root@VM-16-14-centos simple-dockerfile]# docker images
+Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
+REPOSITORY                TAG         IMAGE ID      CREATED        SIZE
+<none>                    <none>      17cee55c5757  4 hours ago    206 MB
+docker.io/library/python  3.7-alpine  1bac8ae77e4a  11 months ago  49.5 MB
+[root@VM-16-14-centos simple-dockerfile]#
+[root@VM-16-14-centos simple-dockerfile]#
+[root@VM-16-14-centos simple-dockerfile]#
+[root@VM-16-14-centos simple-dockerfile]# docker rmi -f 17cee
+
 
 ```  
 
