@@ -12,7 +12,12 @@ ystemctl enable --now podman.socket
 yum install podman-docker
 podman-remote info
 ls -al /var/run/docker.sock
+
+
 [root@VM-16-14-centos single-dev-env]# docker compose -f ./compose-dev.yaml  up
+or
+docker build .
+
 
 ```
 
