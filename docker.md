@@ -1,5 +1,5 @@
 
-```
+``` docker sources update.
 ==https://mirror.ccs.tencentyun.com
 vi //etc/containers/registries.conf
 
@@ -14,6 +14,7 @@ location = "mirror.ccs.tencentyun.com"
 
 ```
 ```
+git clone https://github.com/ianmiell/simple-dockerfile
 [root@VM-16-14-centos simple-dockerfile]# docker run -it $(docker build -q .)
 Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
 Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.
