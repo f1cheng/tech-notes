@@ -1,10 +1,5 @@
 
-
-installed app in linux, where it stored even restart, it is persistent.?
-Casper is a friendly little ghost of a filesystem.
-
-
-- mk fs of directories into image
+- mk fs of directories based on xfilesystem format(superblock,inodes blocks, blockdata), then write into into image
 ```
 main.py  mount folder to--> imagename
 ==write contents in folders into image name file.
