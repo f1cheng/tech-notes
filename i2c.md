@@ -1,9 +1,9 @@
 
-- Read From One Register in a Device
--- i2c master send read command with slave register addr to ask slave, and following bits get the data from slave register.(etc power value, temp value)
--- how i2c master get slave's register addr, it is got via device tree of slave devices.
--- https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1721224584453&ref_url=https%253A%252F%252Fwww.google.com%252F
-![image](https://github.com/user-attachments/assets/e00b0e1f-44df-41c9-88b7-be42a4814dca)
+- Read From One Register in a Device  
+-- i2c master send read command with slave register addr to ask slave, and following bits get the data from slave register.(etc power value, temp value)  
+-- how i2c master get slave's register addr, it is got via device tree of slave devices.  
+-- https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1721224584453&ref_url=https%253A%252F%252Fwww.google.com%252F  
+![image](https://github.com/user-attachments/assets/e00b0e1f-44df-41c9-88b7-be42a4814dca)  
 
 
 ```
@@ -11,8 +11,6 @@
 I2C master 读写都是master_xfer，readwrite bit来标识是读还是写，写0，读1：
 比如axia---fpga i2c master---temperature slave.
 ==temperature unit write the tem value into own register.
-i2c master send read command with slave register addr to ask slave to get the value via "reqest data's info: may include register".
-
 https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1721224584453&ref_url=https%253A%252F%252Fwww.google.com%252F
 
 
