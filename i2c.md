@@ -1,6 +1,7 @@
 
 - Read From One Register in a Device  
--- i2c master send read command with slave register addr to ask slave, and following bits get the data from slave register.(etc power value, temp value)  
+-- i2c master send read command with slave register addr to ask slave, and following bits get the data from slave register.(etc power value, temp value)
+-- how slave register value stored, it's slave device which writes the info(temp value) into corresponding register based on request.
 -- how i2c master get slave's register addr, it is got via device tree of slave devices.  
 -- https://www.ti.com/lit/an/slva704/slva704.pdf?ts=1721224584453&ref_url=https%253A%252F%252Fwww.google.com%252F  
 ![image](https://github.com/user-attachments/assets/e00b0e1f-44df-41c9-88b7-be42a4814dca)  
