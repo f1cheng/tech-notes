@@ -1,5 +1,6 @@
 
-- Read From One Register in a Device  
+- Read From One Register in a Device
+-- it uses master_xfer for read/write the data from slave.  
 -- i2c master send read command with slave register addr to ask slave, and following bits get the data from slave register.(etc power value, temp value)  
 -- how slave register value stored, it's slave device which writes the info(temp value) into corresponding register based on request.  
 -- how i2c master get slave's register addr, it is got via device tree of slave devices.  
