@@ -19,3 +19,8 @@ main.py  mount folder to--> imagename
 
 ```
 
+- fs read 
+```
+ Can be none real file but to reuse file's read/write/open. even open with dummy func which is just printing "info".
+ newfs_file_read in this new newfs_file_op, which is read buffer data from e.g. keyboard or others depends on the dev types
+```
