@@ -29,8 +29,8 @@ but because devfs is visible as a part of the filesystem hierarchy,
 it must report those values to the regular tools asking for them.
 'In effect the tools will show the file system space and inode usage as 100%.
 ```
--- fs read 
+-- pseudo fs read 
   ```
-   Can be none real file but to reuse file's read/write/open. even open with dummy func which is just printing "info".
+   Can be none real file content but to reuse file's read/write/open. even open with dummy func which is just printing "info".
    newfs_file_read in this new newfs_file_op, which is read buffer data from e.g. keyboard or others depends on the dev types
   ```
