@@ -18,6 +18,14 @@ main.py  mount folder to--> imagename
         self._flush()
 
 ```
+- fs read
+```
+init phase: super read to super mem;
+tranverse from FS route inode index=0 to read inode, loop to get childs files(directory or file).
+inode of the specific path name get.
+block read the file contents based on the inode's info: direct[] stores the contents blockid(if directory, stores the inode ids)
+
+```
 
 - pseudo filesystem
 ```
