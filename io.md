@@ -8,4 +8,4 @@ SQL databases are vertically scalable, while NoSQL databases are horizontally sc
 SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores.
 SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
 ```  
-![image](https://github.com/user-attachments/assets/70c3181a-4992-4dd3-8f2a-e4a11694c382)  
+SQLite ![image](https://github.com/user-attachments/assets/70c3181a-4992-4dd3-8f2a-e4a11694c382)  
