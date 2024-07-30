@@ -9,3 +9,5 @@ SQL databases are table-based, while NoSQL databases are document, key-value, gr
 SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
 ```  
 SQLite ![image](https://github.com/user-attachments/assets/70c3181a-4992-4dd3-8f2a-e4a11694c382)  
+
+![image](https://github.com/user-attachments/assets/e2cfa695-ae55-463a-be46-82a2eb211362)
