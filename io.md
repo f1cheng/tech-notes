@@ -25,8 +25,10 @@ https://samuelalbanie.com/files/digest-slides/2022-12-brief-guide-to-b-trees.pdf
 https://github.com/albanie/algorithms-and-data-structures
 
 
-disk file layout:
-![image](https://github.com/user-attachments/assets/a2fc93c1-f222-42ab-ae0e-114123d65450)
+disk file layout:  
+![image](https://github.com/user-attachments/assets/a2fc93c1-f222-42ab-ae0e-114123d65450)  
+
+![image](https://github.com/user-attachments/assets/e93bb192-bea3-499a-a09a-9914fa92e58c)  
 
 memory layout for locating:
 >> Refer: https://vishalrana9915.medium.com/understanding-b-tree-e4cb339e4164  
