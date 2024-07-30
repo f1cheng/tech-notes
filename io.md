@@ -11,3 +11,5 @@ SQL databases are better for multi-row transactions, while NoSQL is better for u
 SQLite ![image](https://github.com/user-attachments/assets/70c3181a-4992-4dd3-8f2a-e4a11694c382)  
 
 ![image](https://github.com/user-attachments/assets/e2cfa695-ae55-463a-be46-82a2eb211362)
+
+![image](https://github.com/user-attachments/assets/74c370c1-cdd5-4b97-b983-bd21d9bc234f)
