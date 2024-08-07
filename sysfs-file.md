@@ -1,6 +1,9 @@
 - how sysfile created  
   file/dir hierarchy is created via inode relative via kernfs_new_node().  
 ```
+dir create 
+error = create_dir(kobj);----------------------------------------------
+
 how device file created?
 struct kernfs_node *__kernfs_create_file(struct kernfs_node *parent,
 					 const char *name,
