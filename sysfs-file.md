@@ -1,5 +1,5 @@
 - how sysfile created
-
+  file hierarchy is created via inode relative via kernfs_new_node().
 ```
 how device file created?
 struct kernfs_node *__kernfs_create_file(struct kernfs_node *parent,
