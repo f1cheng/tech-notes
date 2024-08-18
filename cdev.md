@@ -4,7 +4,7 @@
   dev no associate with cdev:  
  ```  
   static int __init etx_driver_init(void)
-{
+  {
         /*Allocating Major number*/
         if((alloc_chrdev_region(&dev, 0, 1, "etx_Dev")) <0){
                 pr_err("Cannot allocate major number\n");
@@ -28,5 +28,6 @@
             pr_err("Cannot create the Device 1\n");
             goto r_device;
         }
+    }  
 ```
 
