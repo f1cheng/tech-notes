@@ -1,6 +1,7 @@
 - how dev associate file inode.
-  https://fastbitlab.com/character-driver-file-operation-methods/
-  
+  https://fastbitlab.com/character-driver-file-operation-methods/  
+
+  dev no associate with cdev:  
  ```  
   static int __init etx_driver_init(void)
 {
