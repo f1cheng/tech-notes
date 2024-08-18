@@ -1,6 +1,7 @@
 - how dev associate file inode.
-  https://fastbitlab.com/character-driver-file-operation-methods/  
-  ```  
+  https://fastbitlab.com/character-driver-file-operation-methods/
+  
+ ```  
   static int __init etx_driver_init(void)
 {
         /*Allocating Major number*/
@@ -26,4 +27,5 @@
             pr_err("Cannot create the Device 1\n");
             goto r_device;
         }
-  ```  
+```
+
