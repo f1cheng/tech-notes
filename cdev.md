@@ -1,7 +1,7 @@
-- how dev associate file inode.
+- how dev number associate file inode.
   https://fastbitlab.com/character-driver-file-operation-methods/  
 
-  dev no associate with cdev:  
+  dev no(dev number) associates with cdev:  
  ```  
   static int __init etx_driver_init(void)
   {
